@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notizblock</title>
+    <script src="./scripts/templates.js"></script>
+    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./styles/assets.css" />
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/content.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="renderNotes()">
+    <h1>Notizblock</h1>
+    <div class="input_div">
+      <input onkeypress="checkEnter(event)" id="note_Input2" type="text" placeholder="title" />
+      <input onkeypress="checkEnter(event)" id="note_Input" type="text" placeholder="note"/>
+      <button onclick="addNote()">+</button>
+    </div>
+    <div id="content">
+    </div>
+    <h2>Zuletzt gelöscht</h2>
+    <div id="trash_content">
+    </div>
+    <h2>Archiv</h2>
+    <div id="archive_content">
+
+    </div>
+  </body>
+</html>

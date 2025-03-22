@@ -1,0 +1,38 @@
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 16px;
+    border-radius: 16px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 56px;
+    background-color: rgb(35, 35, 35);
+}
+
+#trash_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 16px;
+    border-radius: 16px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 32px;
+    background-color: rgb(35, 35, 35);
+}
+
+#archive_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 16px;
+    border-radius: 16px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 32px;
+    background-color: rgb(35, 35, 35);
+}

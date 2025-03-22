@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(50, 50, 50);
+    font-family: 'Raleway', 'sans-serif' ;
+
+
+}
+
+
+h1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(31, 31, 31);
+    color:orange;
+    margin: 16px;
+    border-radius: 16px;
+    height: 75px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    color:orange;
+
+}
+
+h3 {
+    color: orange;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    border: 1px solid orange;
+    border-radius: 8px;
+    color: antiquewhite;
+    padding: 10px;
+}
+
+
