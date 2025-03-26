@@ -1,34 +1,34 @@
 function getNoteTemplate(indexNote) {
     return `
     <div>
-    <h3>${notesTitle[indexNote]}</h3>
-    <p>${notes[indexNote]}</p>
+    <h3>${allNotes.notesTitle[indexNote]}</h3>
+    <p>${allNotes.notes[indexNote]}</p>
         <div class="notes_btn">
-        <button onclick="switchNoteToTrash(${indexNote})">X</button>
-        <button onclick="switchNoteToArchive(${indexNote})">A</button>
-        <div>
+        <button onclick="moveNote(${indexNote}, 'notes', 'trashNotes')">X</button>
+        <button onclick="moveNote(${indexNote}, 'notes', 'archiveNotes')">A</button>
+        </div>
     </div>`
 }
 
 function getTrashNoteTemplate(indexTrashNote) {
     return `
     <div>
-    <h3>${trashNotesTitle[indexTrashNote]}</h3>
-    <p>${trashNotes[indexTrashNote]}</p>
+    <h3>${allNotes.trashNotesTitle[indexTrashNote]}</h3>
+    <p>${allNotes.trashNotes[indexTrashNote]}</p>
         <div class="notes_btn">
         <button onclick="deleteNote(${indexTrashNote})">X</button>
-        <button onclick="switchBackToNotes(${indexTrashNote})">N</button>
+        <button onclick="moveNote(${indexTrashNote}, 'trashNotes', 'notes')">N</button>
         </div>`;
     
-}
+} 
 
 function getArchiveNoteTemplate(indexArchiveNote) {
     return `
     <div>
-    <h3>${archiveNotesTitles[indexArchiveNote]}</h3>
-    <p>${archiveNotes[indexArchiveNote]}</p>
+    <h3>${allNotes.archiveNotesTitle[indexArchiveNote]}</h3>
+    <p>${allNotes.archiveNotes[indexArchiveNote]}</p>
         <div class="notes_btn">
-        <button onclick="deleteNote(${indexArchiveNote})">X</button>
-        <button onclick="switchArchiveToNote(${indexArchiveNote})">N</button>
+        <button onclick="moveNote(${indexArchiveNote}, 'archiveNotes', 'trashNotes')">X</button>
+        <button onclick="moveNote(${indexArchiveNote}, 'archiveNotes', 'notes')">N</button>
         </div>`;
 }
